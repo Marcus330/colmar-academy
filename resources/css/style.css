@@ -1,0 +1,269 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Bar*/
+header {
+    width: auto;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 2px solid black;
+    align-items: center;
+
+}
+
+.logo {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.academy {
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    padding-right: 16px;
+    color: black;
+    font-size: 20px;
+    
+}
+
+
+#on-campus{
+    display: flex;
+    padding: 32px 24px;
+    background-color: cornflowerblue;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner {
+    width: 60%;
+}
+
+.learning-message{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    margin-left: 24px;
+    align-items: center;
+    width: 40%;
+    line-height: 90px;
+}
+
+.learning-message h2{
+    color: black;
+    font-size: 56px;
+}
+
+.learning-message h3{
+    color: black;
+    font-size: 26px;
+    line-height: 30px;
+
+}
+
+button{
+    background-color: darkgray;
+    padding: 8px 0;
+    width: 480px;
+    cursor: pointer;
+    margin-top: 40px;
+    border: none;
+}
+
+button:hover{
+    background-color: darkorange;
+}
+
+#practicing{
+    display: flex;
+    
+}
+
+.course{
+    width: 60%;
+    padding: 32px 24px;
+    border-right: 1px solid black;
+}
+
+.course img{
+    width: 100%;
+}
+
+.information{
+    width: 40%;
+}
+
+.information img{
+    margin: 32px;
+    width: 35%;
+}
+
+.orientation{
+    display: flex;
+}
+
+.orientation-date{
+    display: flex;
+}
+
+.guest{
+    display: flex;
+    background-color: gray;
+}
+
+.campus-info{
+    margin: auto;
+}
+
+.practicing-message h2{
+    font-size: 40px;
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.practicing-message h3{
+    font-size: 24px;
+    padding-bottom: 32px;
+    opacity: 0.5;
+}
+
+.practicing-message h4{
+    font-size: 16px;
+    padding-bottom: 32px;
+    opacity: 0.5;
+}
+
+#thesis h2{
+    text-align: center;
+    font-size: 32px;
+    margin: 32px 0;
+}
+
+.thesis{
+    display: flex;
+}
+
+.thesis-video{
+    width: 60%;
+    margin: 0 32px;
+}
+
+video {
+    width: 100%;
+}
+
+.thesis-text h3{
+    margin: 24px 0 8px 0;
+    font-size: 20px;
+}
+
+.thesis-text p{
+    opacity: 0.5;
+}
+
+.thesis-info{
+    width: 40%;
+}
+
+.fisma, .now-and-then{
+    display: flex;
+}
+
+.fisma img{
+    width: 35%;
+    margin: 16px;
+}
+
+.now-and-then img{
+    width: 35%;
+    margin: 16px;
+}
+
+.fisma{
+    background-color: lightgray;
+}
+
+.fisma-text, .now-and-then-text{
+    margin: auto 0;
+}
+
+
+
+
+#information-mobile{
+display: none;
+}
+
+@media (min-width: 660px) {
+    .mobile{
+        display: none;
+    }
+    #information-mobile{
+        display: none;
+        
+    }
+}
+
+@media (max-width: 660px) {
+    .logo{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    #practicing{
+        display: none;
+    }
+
+    #on-campus{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner{
+        width: 100%;
+    }
+    
+    #information-mobile{
+        display: flex;
+        
+    }
+
+    .orientation, .orientation-date, .guest{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .orientation img{
+        width: 100%;
+    }
+
+    .orientation-date img{
+        width: 100%;
+    }
+
+    .guest img{
+        width: 100%;
+    }
+}
