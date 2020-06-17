@@ -48,10 +48,13 @@ a {
 
 .banner img{
     width: 100%;
+   
 }
 
 .banner {
-    width: 60%;
+    width: 60%; 
+    
+   
 }
 
 .learning-message{
@@ -59,8 +62,7 @@ a {
     flex-flow: wrap column;
     justify-content: center;
     margin-left: 24px;
-    align-items: center;
-    width: 40%;
+    width: 500px;
     line-height: 90px;
 }
 
@@ -78,29 +80,37 @@ a {
 
 button{
     background-color: darkgray;
-    padding: 8px 0;
-    width: 480px;
+    padding: 8px;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 50px;
     border: none;
+    font-size: 20px;
+    width: 500px;
 }
 
 button:hover{
     background-color: darkorange;
 }
 
-#practicing{
+
+
+
+ /*   PRACTICING SECTION   */
+
+  .practicing-desktop{
     display: flex;
+    
     
 }
 
-.course{
+
+.courses{
     width: 60%;
     padding: 32px 24px;
     border-right: 1px solid black;
 }
 
-.course img{
+.courses img{
     width: 100%;
 }
 
@@ -123,7 +133,7 @@ button:hover{
 
 .guest{
     display: flex;
-    background-color: gray;
+    background-color: lightgrey;
 }
 
 .campus-info{
@@ -146,12 +156,57 @@ button:hover{
     font-size: 16px;
     padding-bottom: 32px;
     opacity: 0.5;
+} 
+
+
+#learning{
+    background-color: lightgray;
+}
+
+#learning h2{
+    text-align: center;
+    font-size: 32px;
+    padding: 32px 0;
+}
+
+.start-learning{
+    margin: 0 72px 32px 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-img img{
+     width: 100%;
+}
+
+.course-text{
+    padding: 16px;
+}
+
+.course{
+    width: 25%;
+    background-color: white;
+    margin: 16px;
+}
+
+.course h3{
+    margin-top: 16px;
+}
+
+.course h4, h5{
+    margin: 8px 0;
+    opacity: 0.5;
 }
 
 #thesis h2{
     text-align: center;
     font-size: 32px;
     margin: 32px 0;
+}
+
+#thesis{
+    border-bottom: 1px solid lightgray;
 }
 
 .thesis{
@@ -174,6 +229,7 @@ video {
 
 .thesis-text p{
     opacity: 0.5;
+    margin-bottom: 32px;
 }
 
 .thesis-info{
@@ -202,22 +258,35 @@ video {
     margin: auto 0;
 }
 
-
-
-
-#information-mobile{
-display: none;
+footer{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.5;
+    margin: 16px 24px auto 24px;
+    height: 64px;
 }
+
+
+ 
+
+
 
 @media (min-width: 660px) {
     .mobile{
         display: none;
     }
-    #information-mobile{
+     
+    #practicing-mobile{
         display: none;
         
     }
-}
+
+
+.learning-mobile{
+        display: none;
+    }
+    
+} 
 
 @media (max-width: 660px) {
     .logo{
@@ -231,39 +300,70 @@ display: none;
         justify-content: space-around;
         width: 100%;
     }
-    #practicing{
-        display: none;
+    .banner{
+        width: 100%;
     }
 
+    .learning-message{
+        margin-left: 0;
+        width: 100%;
+    }
+     .practicing-desktop{
+        display: none;
+    }
+    .courses{
+        display: none;
+    }
     #on-campus{
         display: flex;
         flex-direction: column;
     }
-
-    .banner{
-        width: 100%;
-    }
-    
-    #information-mobile{
-        display: flex;
-        
-    }
-
     .orientation, .orientation-date, .guest{
         display: flex;
         flex-direction: column;
+        line-height: 34px;
+    }
         
-    }
+ .practicing-mobile{
+    margin: 16px;
 
-    .orientation img{
-        width: 100%;
-    }
+ }
+ .practicing-mobile h2{
+    margin-top: 24px;
+ }
 
-    .orientation-date img{
-        width: 100%;
-    }
+ .guest{
+     background-color: white;
+ }
 
-    .guest img{
-        width: 100%;
-    }
+ .start-learning{
+     display: none;
+ }
+
+ #learning{
+     background-color: white;
+ }
+
+.learning-mobile h3{
+    background-color: lightgrey;
+    padding: 16px 0 24px 16px;
+    width: 80%;
+    margin: 20px auto;
 }
+
+.thesis-text{
+    display: none;
+}
+
+.thesis-info{
+    display: none;
+}
+
+.thesis-video{
+    width: 100%;
+}
+footer h6{
+    display: none;
+}
+}
+
